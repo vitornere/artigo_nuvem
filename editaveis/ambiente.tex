@@ -1,0 +1,27 @@
+\section{Ambiente}
+
+No artigo analisado foi utilizado a ferramenta CloudSim e sua extensão CloudSim-DVFS. O CloudSim é
+um simulador de nuvens computacionais, que pode ser utilizado para geração de uma nuvem privada.
+No que se refere a nuvem privada, sua infraestrutura opera exclusivamente para uma única organização ou usuário,
+seja ela gerida internamente ou por um terceiro, e hospedada internamente ou externamente.
+
+O CloudSim-DVFS é uma extensão do simulador CloudSim que permite simulações energéticas tanto de uma
+carga de trabalho quanto de workflows, além de fornecer uma nova versão da simulação da técnica
+de dimensionamento dinâmico de voltagem e frequência (\textit{Dynamic voltage and frequency scaling – DVFS}).
+Essa técnica permite mudar dinamicamente a voltagem e a frequência de um processador de acordo com
+a carga de trabalho, resultando em um consumo de energia menor. \cite{elaine_et_al:14}
+
+Essa ferramenta foi utilizada no artigo \cite{elaine_et_al:14} proposto por possibilitar a simulação em nuvens computacionais
+de workflows descritos no mesmo padrão usado pelo Pegasus, avaliando o tempo de execução e o consumo energético.
+Além disso, o código da ferramenta é livre, sendo assim, é possível incluir nela novos algoritmos de escalonamento de tarefas.
+
+Nesse artigo foram utilizadas as ferramentas \textit{Eucalyptus}, na versão 3.1.1.1, para simulação e geração de nuvens computacionais e o \textit{VMWare}\footnote{a.k.a Virtual Machine Ware} para simulação de virtualização. O \textit{Eucalyptus}
+é uma ferramente de software de código aberto para computação em nuvem que implementa o que é comumente referido
+como infraestrutura como serviço (IaaS), que são sistemas que dão aos usuários a capacidade de executar e controlar
+instâncias de máquinas virtuais inteiras implantados através de uma variedade de recursos físicos. \cite{nurmi_2009}
+
+A \textit{VMWare} foi utilizada para a criação de uma máquina virtual do sistema operacional CentOS 6 para replicação do experimento
+ocorrido no \cite{elaine_et_al:14}. O conceito de máquina virtual é definido pela IBM como: uma cópia do hardware físico da máquina totalmente protegido
+e isolado. Assim, cada usuário de uma máquina virtual possui a ilusão de ter uma máquina física dedicada.
+Os desenvolvedores de software também podem escrever e testar programas sem o medo de deixar que a máquina física
+não funcione e afete outros usuários. \cite{sugerman2001virtualizing}.

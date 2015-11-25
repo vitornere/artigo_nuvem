@@ -124,3 +124,7 @@ sympy-plots-for-*.tex/
 # WinEdt
 *.bak
 *.sav
+
+sbc-template.pdf
+artigo_nuvem.pdf
+sbc-template.ps

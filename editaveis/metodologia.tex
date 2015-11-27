@@ -1,10 +1,10 @@
 \section{Metodologia}
 
-O objetivo deste artigo, é o da replicação do experimento feito em \cite{elaine_et_al:14}. Os problemas encontrados no decorrer do experimento foram devidamente citados na seção \ref{sec:dificuldades}.
+O objetivo deste artigo, é o da replicação do experimento feito em \cite{coutinho_et_al:14}. Os problemas encontrados no decorrer do experimento foram devidamente citados na seção \ref{sec:dificuldades}.
 
-Para iniciar o experimento de replicação, inicialmente foi feita o levantamento de ambiente, que consistiu basicamente do download do \textit{hipervisor}\footnote{Camada de software localizada entre a camada de hardware e o sistema operacional\cite{dev_midia}} de simulação de virtualização \textit{VMWare}\footnote{a.k.a Virtual Machine Ware} e do download da imagem virtual do sistema operacional \textit{fast start} para o \textit{Eucalyptus}. Esta imagem virtual contém uma imagem do sistema operacional CentOS 6.4 com o \textit{Eucalyptus} previamente instalado, sendo necessário somente a configuração inicial do \textit{Eucalyptus}. Nesse momento é necessário fazer o levantamento de dois tipos de máquinas virtuais\footnote{a.k.a: Virtual Machine}, o Nó de Controle\footnote{a.k.a: Node Controller} e o Nó de Apresentação\footnote{a.k.a:Frontend Node}.
+Para iniciar o experimento de replicação, inicialmente foi feita o levantamento de ambiente, que consistiu basicamente do download do \textit{hipervisor}\footnote{Camada de software localizada entre a camada de hardware e o sistema operacional\cite{dev_midia}} de simulação de virtualização \textit{VMWare}\footnote{a.k.a Virtual Machine Ware} e do download da imagem virtual do sistema operacional \textit{Ubunto Server} onde ficará o \textit{CloudStack}. Esta imagem virtual contém uma imagem do sistema operacional Ubunto 14.04.1 onde o \textit{CloudStack} será posteriormente instalado. Após algumas configuraçoes na máquina virtual, o CloudStack poderá ser iniciado pelo brownser. 
 
-Ainda no ambiente, ao termino da configuração dos nós da rede, é necessário fazer o lançamento das instâncias de máquinas virtuais. Alguns instâncias foram lançadas utilizando configurações mínimas da máquina virtual.
+Após efetuado login, é necessário configurar o \textit{Zone}, \textit{Pod}, \textit{Cluster}, \textit{Storage} e por fim o \textit{Host}.
 
 No artigo alvo, foi fornecido um repositório aberto no \textit{GitHub}, com o código do artigo completamente implementado. Uma forma de avaliar o que o artigo propõe é simplesmente executar o que já foi implementado e comparar os resultados da execução com o do artigo alvo.
 

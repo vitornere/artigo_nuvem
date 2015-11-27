@@ -1,35 +1,35 @@
 \section{Dificuldades}
 \label{sec:dificuldades}
 
-Este artigo foi feito baseado na atividade de refazer o experimento no artigo \cite{elaine_et_al:14} utilizando de outra tecnologia que não fosse usada no artigo alvo. O artigo alvo usa a ferramenta \textit{CloudSim}. Já o experimento de replicação está usando o \textit{Eucalyptus}. Este experimento foi feito para a matéria de Computação em Nuvem da Faculdade do Gama.
+Este artigo foi feito baseado na atividade de refazer o experimento no artigo \cite{coutinho_et_al:14} utilizando de outra tecnologia que não fosse usada no artigo alvo. O artigo alvo usa a ferramenta \textit{OpenNebula}. Já o experimento de replicação está usando o \textit{ClouStack}. Este experimento foi feito para a matéria de Computação em Nuvem da Faculdade do Gama.
 
 Baseado neste fato, alguns problemas relacionados a esta adaptação foram encontrados.
 
 \begin{enumerate}
 
+  \item Instalação da ferramenta CloudStack
+
+  \begin{itemize}
+    \item Problema: Foi feita a escolha de instalar o CloudStack em uma máquina virtual com o Sistema Operacional Mint 17.1, porém não existe, atualmente, as dependências que necessitam ser instaladas.
+    \item Solução: Houve a troca do Sistema Operacional para Ubunto Server 14.04.1.
+  \end{itemize}
+
   \item Simulação de máquinas virtuais
   \begin{itemize}
-    \item Problema: O Eucalyptus não faz simulação, somente a virtualização de ambiente como nuvem.
+    \item Problema: O CloudStack não faz simulação, somente a virtualização de ambiente como nuvem.
     \item Solução: Utilização de máquinas virtuais em baixa quantidade.
   \end{itemize}
 
   \item Simulação da quantidade requerida de máquinas virtuais
   \begin{itemize}
-    \item Problema: O computador utilizado como Nó de controle para o Eucalyptus, não tem poder computacional para virtualização da quantidade mínima de máquinas requerida pelo artigo alvo.
+    \item Problema: O computador utilizado como Nó de controle para o CloudStack, não tem poder computacional para virtualização da quantidade mínima de máquinas requerida pelo artigo alvo.
     \item Solução: Utilização de uma quantidade mínima para simulação
   \end{itemize}
 
-  \item Instalação da ferramenta Eucalyptus
+  \item Criação de um Host
   \begin{itemize}
-    \item Problema: Foi feita a escolha de instalar o Eucalyptus em uma máquina virtual com o Sistema Operacional Ubuntu 12.04 LTS, porém não existe, atualmente, as dependências que necessitam ser instaladas.
-    \item Solução: Houve a troca do Sistema Operacional para CentOS 6.4 . Utilizou-se a versão \textit{fast start} para se fazer a instalação, tanto do Nó de controle, quanto do Nó de apresentação.
-  \end{itemize}
-
-
-  \item Encontrar plug-in's que forneçam ajuda em relação a simulação de cargas
-  \begin{itemize}
-    \item Problema: Não existem plug-in's que façam simulação de cargas.
-    \item Solução: Tentar procurar códigos que possam produzir o mesmo efeito. Porém a procura não foi bem sucedida.
+    \item Problema: A criação do Host não foi com sucesso.
+    \item Solução: Tentar procurar como corrigir o problema e criar um Host. Porém a procura não foi bem sucedida, pois chegou-se que o computador não possui poder computacional suficiente para criar um Host.
   \end{itemize}
 
 
@@ -39,7 +39,7 @@ Baseado neste fato, alguns problemas relacionados a esta adaptação foram encon
 
 \begin{comment}
 
-  \item Instalação da ferramenta Eucalyptus
+  \item Instalação da ferramenta CloudStack
   \begin{itemize}
     \item Problema:
     \item Solução:

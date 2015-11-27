@@ -1,8 +1,9 @@
 \section{Metodologia}
+\label{sec:metodologia}
 
 O objetivo deste artigo, é o da replicação do experimento feito em \cite{coutinho_et_al:14}. Os problemas encontrados no decorrer do experimento foram devidamente citados na seção \ref{sec:dificuldades}.
 
-Para iniciar o experimento de replicação, inicialmente foi feita o levantamento de ambiente, que consistiu basicamente do download do \textit{hipervisor}\footnote{Camada de software localizada entre a camada de hardware e o sistema operacional\cite{dev_midia}} de simulação de virtualização \textit{VMWare}\footnote{a.k.a Virtual Machine Ware} e do download da imagem virtual do sistema operacional \textit{Ubunto Server} onde ficará o \textit{CloudStack}. Esta imagem virtual contém uma imagem do sistema operacional Ubunto 14.04.1 onde o \textit{CloudStack} será posteriormente instalado. Após algumas configuraçoes na máquina virtual, o CloudStack poderá ser iniciado pelo brownser.
+Para iniciar o experimento de replicação, inicialmente foi feita o levantamento de ambiente, que consistiu basicamente do \textit{download} do \textit{hipervisor}\footnote{Camada de software localizada entre a camada de hardware e o sistema operacional\cite{dev_midia}} de simulação de virtualização \textit{VMWare}\footnote{a.k.a Virtual Machine Ware} e do download da imagem virtual do sistema operacional \textit{Ubunto Server} onde ficará o \textit{CloudStack}. Esta imagem virtual contém uma imagem do sistema operacional Ubunto 14.04.1 onde o \textit{CloudStack} será posteriormente instalado. Após algumas configurações na máquina virtual, o \textit{CloudStack} poderá ser iniciado pelo brownser.
 
 Após efetuado login, é necessário configurar o \textit{Zone}, que é equivalente a um único centro de dados, o \textit{Pod}, possui um ou mais \textit{clusters}, o \textit{Cluster}, consiste em um ou mais \textit{hosts} e \textit{storage}, o \textit{Storage}, um recurso de armazenamento normalmente fornecido para um único cluster para o funcionamento real de instância de imagem de disco, e por fim o \textit{Host}, um nó de computação único dentro de um cluster, muitas vezes um \textit{hypervisor}.
 

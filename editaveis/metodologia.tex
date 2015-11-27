@@ -4,7 +4,7 @@ O objetivo deste artigo, é o da replicação do experimento feito em \cite{cout
 
 Para iniciar o experimento de replicação, inicialmente foi feita o levantamento de ambiente, que consistiu basicamente do download do \textit{hipervisor}\footnote{Camada de software localizada entre a camada de hardware e o sistema operacional\cite{dev_midia}} de simulação de virtualização \textit{VMWare}\footnote{a.k.a Virtual Machine Ware} e do download da imagem virtual do sistema operacional \textit{Ubunto Server} onde ficará o \textit{CloudStack}. Esta imagem virtual contém uma imagem do sistema operacional Ubunto 14.04.1 onde o \textit{CloudStack} será posteriormente instalado. Após algumas configuraçoes na máquina virtual, o CloudStack poderá ser iniciado pelo brownser. 
 
-Após efetuado login, é necessário configurar o \textit{Zone}, \textit{Pod}, \textit{Cluster}, \textit{Storage} e por fim o \textit{Host}.
+Após efetuado login, é necessário configurar o \textit{Zone}, que é equivalente a um único centro de dados, o \textit{Pod}, possui um ou mais \textit{clusters}, o \textit{Cluster}, consiste em um ou mais \textit{hosts} e \textit{storage}, o \textit{Storage}, um recurso de armazenamento normalmente fornecido para um único cluster para o funcionamento real de instância de imagem de disco, e por fim o \textit{Host}, um nó de computação único dentro de um cluster, muitas vezes um \textit{hypervisor}.
 
 No artigo alvo, foi fornecido um repositório aberto no \textit{GitHub}, com o código do artigo completamente implementado. Uma forma de avaliar o que o artigo propõe é simplesmente executar o que já foi implementado e comparar os resultados da execução com o do artigo alvo.
 

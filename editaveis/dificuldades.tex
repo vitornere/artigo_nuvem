@@ -1,16 +1,16 @@
 \section{Dificuldades}
 \label{sec:dificuldades}
 
-Este artigo foi feito baseado na atividade de refazer o experimento no artigo \cite{coutinho_et_al:14} utilizando de outra tecnologia que não fosse usada no artigo alvo. O artigo alvo usa a ferramenta \textit{OpenNebula}. Já o experimento de replicação está usando o \textit{ClouStack}. Este experimento foi feito para a matéria de Computação em Nuvem da Faculdade do Gama.
+Este artigo foi feito baseado na atividade de se reutilizar dos conhecimentos abordados no experimento no artigo \cite{coutinho_et_al:14} utilizando de outra tecnologia que não fosse usada no artigo alvo. O artigo alvo utilizava a ferramenta \textit{OpenNebula}, em contrapartida o experimento de replicação está utilizando o \textit{ClouStack}, como foi citado na seção \ref{sec:ambiente}. Este experimento foi feito como proposta de trabalho da disciplina de Computação em Nuvem da Universidade de Brasília, campus Gama, com o intuito de replicarmos os mesmos experimentos abordados no artigo definido pelos próprios integrantes do grupo, entretando ao decorrer dessa prática nos deparamos com inúmeras dificuldades, onde os resultados podem ser vistos na seção \ref{sec:resultados}.
 
-Baseado neste fato, alguns problemas relacionados a esta adaptação foram encontrados.
+Baseado neste fato, alguns problemas relacionados a esta adaptação foram encontrados e listados nessa seção com o objetivo de descrever o problema e uma possível solução para o mesmo.
 
 \begin{enumerate}
 
   \item Instalação da ferramenta CloudStack
 
   \begin{itemize}
-    \item Problema: Foi feita a escolha de instalar o CloudStack em uma máquina virtual com o Sistema Operacional Mint 17.1, porém não existe, atualmente, as dependências que necessitam ser instaladas.
+    \item Problema: Foi feita a escolha de instalar o CloudStack em uma máquina virtual com o Sistema Operacional Linux Mint 17.1, porém não foi possível instalar algumas depêndencias que eram necessárias para criação do ambiente experimental.
     \item Solução: Houve a troca do Sistema Operacional para Ubunto Server 14.04.1.
   \end{itemize}
 
@@ -22,8 +22,8 @@ Baseado neste fato, alguns problemas relacionados a esta adaptação foram encon
 
   \item Simulação da quantidade requerida de máquinas virtuais
   \begin{itemize}
-    \item Problema: O computador utilizado como Nó de controle para o CloudStack, não tem poder computacional para virtualização da quantidade mínima de máquinas requerida pelo artigo alvo.
-    \item Solução: Utilização de uma quantidade mínima para simulação
+    \item Problema: O computador, utilizado como Nó de controle para o CloudStack, não possuia recursos computacionais para virtualização da quantidade mínima de máquinas requerida pelo artigo alvo.
+    \item Solução: Utilização de uma quantidade mínima para simulação.
   \end{itemize}
 
   \item Criação de um Host
@@ -31,8 +31,6 @@ Baseado neste fato, alguns problemas relacionados a esta adaptação foram encon
     \item Problema: A criação do Host não foi com sucesso.
     \item Solução: Tentar procurar como corrigir o problema e criar um Host. Porém a procura não foi bem sucedida, pois chegou-se que o computador não possui poder computacional suficiente para criar um Host.
   \end{itemize}
-
-
 
 \end{enumerate}
 
